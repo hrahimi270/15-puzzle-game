@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifteen Puzzle Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reboot.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>15 Puzzle Game</h1>
+            <div class="boards">
+                <button class="add-board">+</button>
+                <button class="active" data-target="board1">Board 1</button>
+            </div>
+        </header>
+
+        <div class="add-board-modal">
+            <div class="modal-content">
+                <h2>Add Board <button class="close">X</button></h2>
+                <form>
+                    <div class="form-control">
+                        <label for="columns">Columns</label>
+                        <input type="number" id="columns" name="columns" placeholder="Columns" value="4" />
+                    </div>
+
+                    <div class="form-control">
+                        <label for="rows">Rows</label>
+                        <input type="number" id="rows" name="rows" placeholder="Rows" value="4" />
+                    </div>
+
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="won">
+            <div class="modal-content">
+                <h2>Congratulations!<br/>You Won :)</h2>
+                <button class="close">Close</button>
+            </div>
+        </div>
+
+        <div id="board1" class="board"></div>
+    </main>
+    <script src="./js/Puzzle.js"></script>
+    <script src="./js/Board.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

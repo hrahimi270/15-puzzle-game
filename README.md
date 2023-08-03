@@ -1,0 +1,2 @@
+# 15 puzzle game
+An interactive puzzle game built with HTML, CSS, and vanilla JavaScript. The game features a user interface that allows creating multiple puzzle boards simultaneously, with each board configurable to a rectangular grid of variable width and height. Puzzles of different sizes and complexities can be generated on each board.
